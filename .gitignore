@@ -1,0 +1,8 @@
+.venv/
+airflow/
+__pychace__/
+*.pyc
+.pytest_cache/
+logs/
+.env
+*.db
