@@ -22,8 +22,6 @@ jobs:
 
       - name: Install Airflow and project dependencies
         run: |
-          airflow db migrate
-          airflow dags list-import-errors
           python -m pip install --upgrade pip
           AIRFLOW_VERSION=3.4.0
           PYTHON_VERSION=3.12
@@ -31,6 +29,9 @@ jobs:
           pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
           pip install -r requirements.txt
           pip install pytest
+
+      - name: Initialize the Airflow database
+        run: airflow db migrate
 
       - name: Check DAG import errors
         run: airflow dags list-import-errors
