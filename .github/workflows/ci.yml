@@ -20,6 +20,9 @@ jobs:
           python-version: "3.12"
           cache: pip
 
+      - name: Super-Linter
+        uses: super-linter/super-linter@v7.1.0
+
       - name: Install Airflow and project dependencies
         run: |
           python -m pip install --upgrade pip
