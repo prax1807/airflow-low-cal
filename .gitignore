@@ -1,6 +1,6 @@
 .venv/
 airflow/
-__pychace__/
+__pycache__/
 *.pyc
 .pytest_cache/
 logs/
