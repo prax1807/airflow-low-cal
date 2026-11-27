@@ -5,5 +5,5 @@ It is supposed to be a fun project where I am learning to use an locale machine 
 
 Local Updates:
 Damn I thought my airflow instance was working fine XD, was wrong
-Reinitialized Airflow with available ram space and single processor id doesn't eat up the system slow but works.
+Reinitialized Airflow with available ram space and single processor ID doesn't eat up the system slow but works.
 Will work on CD part inside the local next
