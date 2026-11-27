@@ -1,3 +1,7 @@
+permissions:
+  contents: read
+  statuses: write
+
 name: Airflow CI
 
 on:
